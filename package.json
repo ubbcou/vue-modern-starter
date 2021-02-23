@@ -13,6 +13,11 @@
       "prettier-standard --lint"
     ]
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "dependencies": {
     "vue": "^3.0.5",
     "vue-router": "4",
