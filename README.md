@@ -1,3 +1,4 @@
+![Node.js CI](https://github.com/thelinuxlich/react-modern-starter/workflows/Node.js%20CI/badge.svg)&nbsp;&nbsp;&nbsp;<a href="https://app.netlify.com/start/deploy?repository=https://github.com/ubbcou/vue-modern-starter"><img src="https://www.netlify.com/img/deploy/button.svg"></a>
 # vue-modern-starter (Vue 3 + Typescript + Vite + vuex)
 
 - [Vue](https://reactjs.org/docs/getting-started.html) for rendering
