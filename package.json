@@ -4,13 +4,16 @@
   "license": "MIT",
   "scripts": {
     "dev": "vite",
-    "lint:script": "eslint --ext .ts,vue --ignore-path .gitignore .",
+    "lint:script": "eslint --ext .ts --ext .vue --ignore-path .gitignore .",
     "build": "vite build",
     "serve": "vite preview",
     "lint-staged": "lint-staged"
   },
   "lint-staged": {
-    "*.{ts,vue}": "eslint --fix"
+    "*.{ts,vue}": [
+      "prettier --write",
+      "eslint --fix"
+    ]
   },
   "dependencies": {
     "vue": "^3.0.5",

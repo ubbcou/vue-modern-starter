@@ -4,15 +4,15 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
-import Nav from "./components/Nav.vue";
+import { defineComponent } from 'vue'
+import Nav from './components/Nav.vue'
 
 export default defineComponent({
-  name: "App",
+  name: 'App',
   components: {
     Nav,
   },
-});
+})
 </script>
 
 <style></style>

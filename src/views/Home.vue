@@ -27,39 +27,39 @@
 </template>
 
 <script lang="ts">
-import Header from "../components/Header.vue";
+import Header from '../components/Header.vue'
 
-import { defineComponent, reactive } from "vue";
+import { defineComponent, reactive } from 'vue'
 
 export default defineComponent({
-  name: "App",
+  name: 'App',
   components: {
     Header,
   },
   setup() {
     const links = reactive([
       {
-        to: "/example",
-        text: "Example index",
+        to: '/example',
+        text: 'Example index',
       },
       {
-        to: "/example/1",
-        text: "Example id: 1",
+        to: '/example/1',
+        text: 'Example id: 1',
       },
       {
-        to: "/example/2",
-        text: "Example id: 2",
+        to: '/example/2',
+        text: 'Example id: 2',
       },
       {
-        to: "/example/page",
-        text: "Example Page",
+        to: '/example/page',
+        text: 'Example Page',
       },
-    ]);
+    ])
     return {
       links,
-    };
+    }
   },
-});
+})
 </script>
 
 <style></style>

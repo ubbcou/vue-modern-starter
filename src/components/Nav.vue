@@ -199,23 +199,23 @@
 </template>
 
 <script>
-import { useStore } from "/@/store";
-import { useRoute } from "vue-router";
-import { ref } from "vue";
+import { useStore } from '/@/store'
+import { useRoute } from 'vue-router'
+import { ref } from 'vue'
 
 export default {
   setup: () => {
-    const route = useRoute();
-    const activeClass = ref("text-white bg-gray-900");
+    const route = useRoute()
+    const activeClass = ref('text-white bg-gray-900')
     const inactiveClass = ref(
-      "text-gray-300 hover:text-white hover:bg-gray-700"
-    );
+      'text-gray-300 hover:text-white hover:bg-gray-700'
+    )
 
     const links = [
-      { text: "Home", to: "/" },
-      { text: "About", to: "/about" },
-    ];
-    const store = useStore();
+      { text: 'Home', to: '/' },
+      { text: 'About', to: '/about' },
+    ]
+    const store = useStore()
 
     return {
       links,
@@ -223,9 +223,9 @@ export default {
       route,
       activeClass,
       inactiveClass,
-    };
+    }
   },
-};
+}
 </script>
 
 <style></style>

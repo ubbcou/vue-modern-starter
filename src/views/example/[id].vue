@@ -3,20 +3,20 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
-import { useRoute } from "vue-router";
+import { defineComponent } from 'vue'
+import { useRoute } from 'vue-router'
 
 export default defineComponent({
-  name: "ExampleID",
+  name: 'ExampleID',
   setup() {
-    const route = useRoute();
-    const { id } = route.params;
+    const route = useRoute()
+    const { id } = route.params
 
     return {
       id,
-    };
+    }
   },
-});
+})
 </script>
 
 <style></style>
