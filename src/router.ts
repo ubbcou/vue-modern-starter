@@ -1,4 +1,9 @@
-import { RouteRecordRaw, createRouter, createWebHistory } from 'vue-router'
+import {
+  RouteRecordRaw,
+  createRouter,
+  createWebHistory,
+  createMemoryHistory,
+} from 'vue-router'
 const modules = import.meta.globEager('./views/**/*.vue')
 
 const routes: RouteRecordRaw[] = []
@@ -66,10 +71,8 @@ if (NotFound) {
   })
 }
 
-console.log(routes)
-
 const router = createRouter({
-  history: createWebHistory(),
+  history: import.meta.env.SSR ? createMemoryHistory() : createWebHistory(),
   routes,
 })
 export default router

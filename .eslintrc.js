@@ -6,18 +6,23 @@ module.exports = {
     node: true,
   },
   extends: [
-    "plugin:vue/vue3-recommended",
-    "eslint:recommended",
-    "@vue/typescript/recommended",
-    "@vue/prettier",
-    "@vue/prettier/@typescript-eslint",
-    "prettier",
+    'plugin:vue/vue3-recommended',
+    'eslint:recommended',
+    '@vue/typescript/recommended',
+    '@vue/prettier',
+    '@vue/prettier/@typescript-eslint',
+    'prettier',
   ],
-  plugins: ["prettier"],
+  plugins: ['prettier'],
   parserOptions: {
     ecmaVersion: 2021,
   },
   rules: {
-    quotes: ["error", "single"],
+    quotes: ['error', 'single'],
   },
-};
+  overrides: [
+    {
+      files: ['src/**'],
+    },
+  ],
+}

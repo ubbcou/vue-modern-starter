@@ -1,6 +1,19 @@
-# Vue 3 + Typescript + Vite
+# vue-modern-starter (Vue 3 + Typescript + Vite + vuex)
 
-This template should help get you started developing with Vue 3 and Typescript in Vite.
+- [Vue](https://reactjs.org/docs/getting-started.html) for rendering
+- [Vue Router](https://next.router.vuejs.org/) for routing
+- [Vuex](https://next.vuex.vuejs.org/) for state management
+- [WindyCSS](https://github.com/voorjaar/windicss/wiki/Introduction) for easy bundling TailwindCSS into the stack
+- [Vite](https://vitejs.dev/guide/) for bundling
+- [lint-staged](https://github.com/okonet/lint-staged) with precommit task for linting
+- Github Actions CI preconfigured for running lint
+- SSR/SSG builtin
+
+## Setup
+
+- Clone to local
+- cd react-modern-starter
+- yarn
 
 ## Recommended IDE Setup
 
