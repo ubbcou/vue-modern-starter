@@ -11,11 +11,12 @@
             Here goes your content. You can also go the About page.
           </div>
           <ul class="mx-30">
-            <li
-              v-for="link in links"
-              :Key="link.to"
-            >
-              <router-link class="block py-2 px-4 bg-gray-500 text-white font-semibold rounded-lg shadow-md hover:bg-white hover:text-red-500 focus:outline-none mb-6" :to="link.to">Click: {{ link.text }}</router-link>
+            <li v-for="link in links" :Key="link.to">
+              <router-link
+                class="block py-2 px-4 bg-gray-500 text-white font-semibold rounded-lg shadow-md hover:bg-white hover:text-red-500 focus:outline-none mb-6"
+                :to="link.to"
+                >Click: {{ link.text }}</router-link
+              >
             </li>
           </ul>
         </div>

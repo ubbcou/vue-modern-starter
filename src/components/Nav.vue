@@ -52,8 +52,8 @@
             <div class="ml-3 relative">
               <div>
                 <button
-                  class="max-w-xs bg-gray-800 rounded-full flex items-center text-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
                   id="user-menu"
+                  class="max-w-xs bg-gray-800 rounded-full flex items-center text-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
                   aria-label="User menu"
                   aria-haspopup="true"
                   @click="store.commit('changeProfileMenuVisible')"
@@ -105,8 +105,8 @@
         <div class="-mr-2 flex md:hidden">
           <!-- {/* Mobile menu button */} -->
           <button
-            @click="store.commit('changeMenuVisible')"
             class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:bg-gray-700 focus:text-white"
+            @click="store.commit('changeMenuVisible')"
           >
             <!-- {/* Menu open: "hidden", Menu closed: "block" */} -->
             <svg

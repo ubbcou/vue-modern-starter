@@ -3,12 +3,11 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent } from "vue";
 
 export default defineComponent({
-  name: 'ExampleIndex'
-})
+  name: "ExampleIndex",
+});
 </script>
 
-<style>
-</style>
+<style></style>
