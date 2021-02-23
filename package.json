@@ -5,9 +5,11 @@
   "scripts": {
     "dev": "vite",
     "lint:script": "eslint --ext .ts --ext .vue --ignore-path .gitignore .",
-    "build": "vite build",
     "serve": "vite preview",
-    "lint-staged": "lint-staged"
+    "lint-staged": "lint-staged",
+    "build": "yarn build:client && yarn build:server",
+    "build:client": "vite build --outDir dist/client",
+    "build:server": "vite build --ssr src/entry-server.ts --outDir dist/server"
   },
   "lint-staged": {
     "*.{ts,vue}": [
@@ -27,6 +29,8 @@
     "@vue/compiler-sfc": "^3.0.5",
     "@vue/eslint-config-prettier": "^6.0.0",
     "@vue/eslint-config-typescript": "^7.0.0",
+    "@vue/server-renderer": "^3.0.5",
+    "cross-env": "^7.0.3",
     "eslint": "^7.20.0",
     "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-vue": "^7.6.0",

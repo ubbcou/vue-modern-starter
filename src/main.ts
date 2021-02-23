@@ -1,11 +1,12 @@
-import { createApp } from 'vue'
+import { createSSRApp } from 'vue'
 import 'windi.css'
 import App from './App.vue'
 import router from './router'
 import store, { key } from './store'
 
-const app = createApp(App)
-
-app.use(router)
-app.use(store, key)
-app.mount('#app')
+export function createApp() {
+  const app = createSSRApp(App)
+  app.use(store, key)
+  app.use(router)
+  return { app, router }
+}
