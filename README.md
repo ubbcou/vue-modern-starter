@@ -1,7 +1,7 @@
-![Node.js CI](https://github.com/thelinuxlich/react-modern-starter/workflows/Node.js%20CI/badge.svg)&nbsp;&nbsp;&nbsp;<a href="https://app.netlify.com/start/deploy?repository=https://github.com/ubbcou/vue-modern-starter"><img src="https://www.netlify.com/img/deploy/button.svg"></a>
+![Node.js CI](https://github.com/ubbcou/vue-modern-starter/workflows/Node.js%20CI/badge.svg)&nbsp;&nbsp;&nbsp;<a href="https://app.netlify.com/start/deploy?repository=https://github.com/ubbcou/vue-modern-starter"><img src="https://www.netlify.com/img/deploy/button.svg"></a>
 # vue-modern-starter (Vue 3 + Typescript + Vite + vuex)
 
-- [Vue](https://reactjs.org/docs/getting-started.html) for rendering
+- [Vue](https://v3.vuejs.org/) for rendering
 - [Vue Router](https://next.router.vuejs.org/) for routing
 - [Vuex](https://next.vuex.vuejs.org/) for state management
 - [WindyCSS](https://github.com/voorjaar/windicss/wiki/Introduction) for easy bundling TailwindCSS into the stack
@@ -13,7 +13,7 @@
 ## Setup
 
 - Clone to local
-- cd react-modern-starter
+- cd vue-modern-starter
 - yarn
 
 ## Recommended IDE Setup
